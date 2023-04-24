@@ -26,7 +26,7 @@ const About = () => {
           </Text>
         </Box>
         <Box>
-          <Avatar size="xl" src="https://avatars.githubusercontent.com/u/123456?v=4" />
+          <Avatar size="xl" src="https://avatars.githubusercontent.com/u/115461226" />
         </Box>
       </Flex>
       <Stack direction={["column", "row"]} spacing={8} mb={12}>

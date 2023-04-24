@@ -56,17 +56,14 @@ const Home = () => {
          <Box flex={{ base: 1, md: 1 / 2 }} mb={{ base: 12, md: 0 }}>
             <Image
                src="https://avatars.githubusercontent.com/u/115461226?v=4"
-               alt="developer working on a computer"
+               alt="Hariom's photo"
                borderRadius="50%"
-               boxShadow="xl"
-               objectFit="cover"
-               objectPosition="center"
-               width="70%"
+               // objectFit="cover"
+               // objectPosition="center"
+               // width="70%"
                padding="auto"
                margin="auto"
                class="home-img"
-               // borderRadius="50%"
-               // height={{ base: "auto", md: "80vh" }}
             />
          </Box>
       </Flex>
