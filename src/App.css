@@ -1,38 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
 .App {
-  text-align: center;
+   text-align: center;
+   /* background-color: #282c34; */
+}
+h3 {
+   color: #ec407a;
+   text-align: center;
+   font-size: 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#home {
+   display: flex;
+   gap: 10%;
+   padding: 100px 100px;
+   align-items: center;
+   font-size: 30px;
+   background: #5b5959;
+   color: white;
+   height: 100%;
+   width: 100%;
+   margin: auto;
+
+   justify-content: space-around;
+   padding-top: 150px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#working img {
+   width: 100%;
+   height: 100%;
+   border-radius: 100px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* 
+#about{
+  width: 100%;
+  margin: auto;
+  padding: 20px 20%;
+background: #5b5959;
+color: #0c0c16;
+
+} */
+
+/* #about img{  
+height: 30%;
+  width: 38%;
+  border-radius: 100px;
+} */
+
+#skills {
+   color: rgb(242, 240, 240);
+   font-weight: 800;
+   margin: auto;
+   background: #5b5959;
 }
 
-.App-link {
-  color: #61dafb;
+#skills > div {
+   display: flex;
+   flexwrap: wrap;
+   justify-content: space-evenly;
+   text-align: center;
+   margin: 5% 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#skills img {
+   width: 100px;
+   height: 100px;
+   border-radius: 10px;
+   padding-bottom: 10px;
+   /* object-fit: cover; */
 }
+
+#contact {
+   /* display: flex; */
+
+   padding: 50px 0px;
+
+   background: #5b5959;
+   color: azure;
+}
+

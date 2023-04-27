@@ -1,71 +1,41 @@
 import React from "react";
+import working from "../images/working.gif";
 import { Box, Flex, Heading, Text, Button, Image } from "@chakra-ui/react";
-
+// import { FaHandHolding, FaHandHoldingHeart } from "react-icons/fa";
+// import { DragHandleIcon } from "@chakra-ui/icons";
+import hand from "../images/waving-hand-joypixels.gif";
 const Home = () => {
    return (
-      <Flex
-         id="home"
-         direction={{ base: "column", md: "row" }}
-         justifyContent="space-between"
-         alignItems="center"
-         px={10}
-         py={20}
-         backgroundColor="gray.50"
-      >
-         <Box
-            flex={{ base: 1, md: 1 / 2 }}
-            mb={{ base: 12, md: 0 }}
-            pr={{ base: 0, md: 16 }}
-            textAlign={{ base: "center", md: "left" }}
-         >
-            <Heading
-               as="h1"
-               size="3xl"
-               fontWeight="bold"
-               lineHeight="normal"
-               color="gray.800"
-               mb={6}
-               id="user-detail-name"
+      <Flex id="home" direction={["column", "row"]}>
+         <div>
+            <h2 style={{ display: "inline" }}>Hi,</h2>
+            <h3 style={{ display: "inline" }}>I'm a </h3>
+            <h2 id="user-detail-name">Hariom Verma</h2>
+            <h2 style={{ display: "inline" }}>A MERN Stack Developer</h2>
+            {/* <Cursor /> */}
+            <br />
+            <a id="resume-link-2"
+               href="https://drive.google.com/file/d/1bDky1HRtcOC-XFUlvjSiHKGLubjUrZJp/view?usp=share_link"
+               target="_blank"
             >
-               Hi, I'm Hariom Verma
-            </Heading>
-            <Text
-               fontSize="xl"
-               lineHeight="tall"
-               color="gray.600"
-               mb={6}
-               id="user-detail-intro"
-            >
-               Hardworking and passionate job seeker with strong organizational
-               skills eager to learn more. Ready to help team achieve company
-               goals. To seek and maintain full- time position that offers
-               professional challenges utilizing interpersonal skills, excellent
-               time management and problem- solving skills.
-            </Text>
-            <Button
-               colorScheme="blue"
-               size="lg"
-               _hover={{ bg: "blue.600" }}
-               as="a"
-               href="https://drive.google.com/file/d/1bDky1HRtcOC-XFUlvjSiHKGLubjUrZJp/view"
-               id="resume-button-1"
-            >
-              Resume
-            </Button>
-         </Box>
-         <Box flex={{ base: 1, md: 1 / 2 }} mb={{ base: 12, md: 0 }}>
-            <Image
-               src="https://avatars.githubusercontent.com/u/115461226?v=4"
-               alt="Hariom's photo"
-               borderRadius="50%"
-               // objectFit="cover"
-               // objectPosition="center"
-               // width="70%"
-               padding="auto"
-               margin="auto"
-               class="home-img"
+               <Button
+                  id="resume-button-2"
+                  px={4}
+                  py={2}
+                  cursor="pointer"
+                  bg={"white"}
+                  color={"gray.800"}
+               >
+                  Resume
+               </Button>
+            </a>
+         </div>
+         <div id="working">
+            <img
+               src="https://img.theweek.in/content/dam/week/news/sci-tech/2019/May/laptop-project-work-project-management-software-shut.jpg"
+               alt="phpto"
             />
-         </Box>
+         </div>
       </Flex>
    );
 };

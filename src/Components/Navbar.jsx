@@ -15,19 +15,19 @@ const Navbar = () => {
 
    return (
       <Flex
-         className="nav-menu"
+         id="nav-menu"
          as="nav"
          align="center"
          justify="space-between"
          wrap="wrap"
          padding="1rem"
-         backgroundColor="gray.800"
+         backgroundColor="#5b5959"
          color="white"
          position="fixed"
          width="full"
       >
-         <Text id="user-detail-name" fontSize="xl" fontWeight="bold">
-            Hariom Verma
+         <Text id="user-detail-name" fontSize="xl" fontWeight="bold" pl={20}  letterSpacing={15}>
+            HARI  
          </Text>
          <Box display={{ base: "block", md: "none" }} onClick={onToggle}>
             <IconButton
@@ -86,13 +86,14 @@ const NavItem = ({ to, label }) => {
 
 const ResumeButton = () => {
    return (
-      <a
+      <a  id="resume-link-1"
          href="https://drive.google.com/file/d/1bDky1HRtcOC-XFUlvjSiHKGLubjUrZJp/view?usp=share_link"
          target="_blank"
         
       >
          <Button
             className="nav-link resume"
+            id="resume-button-1"
             px={4}
             py={2}
             cursor="pointer"
