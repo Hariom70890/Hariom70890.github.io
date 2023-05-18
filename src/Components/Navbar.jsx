@@ -9,7 +9,8 @@ import {
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import { Link } from "react-scroll";
-
+// import resume from "../images/Hariom_Verma_Resume.pdf"
+// import resume
 const Navbar = () => {
    const { isOpen, onToggle } = useDisclosure();
 
@@ -26,8 +27,14 @@ const Navbar = () => {
          position="fixed"
          width="full"
       >
-         <Text id="user-detail-name" fontSize="xl" fontWeight="bold" pl={20}  letterSpacing={15}>
-            HARI  
+         <Text
+            id="user-detail-name"
+            fontSize="xl"
+            fontWeight="bold"
+            pl={20}
+            letterSpacing={15}
+         >
+            HARI
          </Text>
          <Box display={{ base: "block", md: "none" }} onClick={onToggle}>
             <IconButton
@@ -55,15 +62,27 @@ const Navbar = () => {
 const Tabs = () => {
    return (
       <>
-         <NavItem to="home" label="Home" className="nav-link home" />
-         <NavItem to="about" label="About" className="nav-link about" />
-         <NavItem to="skills" label="Skills" className="nav-link skills" />
+         <NavItem to="home" label="Home" className={`navitem nav-link home`} />
+         <NavItem
+            to="about"
+            label="About"
+            className={`navitem nav-link about`}
+         />
+         <NavItem
+            to="skills"
+            label="Skills"
+            className={`navitem nav-link skills`}
+         />
          <NavItem
             to="projects"
             label="Projects"
-            className="nav-link projects"
+            className={`navitem nav-link projects`}
          />
-         <NavItem to="contact" label="Contact" className="nav-link contact" />
+         <NavItem
+            to="contact"
+            label="Contact"
+            className={`navitem nav-link contact`}
+         />
       </>
    );
 };
@@ -86,19 +105,26 @@ const NavItem = ({ to, label }) => {
 
 const ResumeButton = () => {
    return (
-      <a  id="resume-link-1"
-         href="https://drive.google.com/file/d/1bDky1HRtcOC-XFUlvjSiHKGLubjUrZJp/view?usp=share_link"
+      <a
+         id="resume-link-1"
+         className="resumebutton nav-link resume"
+         // href="https://drive.google.com/file/d/1bDky1HRtcOC-XFUlvjSiHKGLubjUrZJp/view?usp=share_link"
          target="_blank"
-        
+         // href={resume}
+         download={"Hariom-Verma-Resume"}
       >
          <Button
-            className="nav-link resume"
             id="resume-button-1"
             px={4}
             py={2}
             cursor="pointer"
             bg={"white"}
             color={"gray.800"}
+            onClick={() =>
+               window.open(
+                  "https://drive.google.com/file/d/1bDky1HRtcOC-XFUlvjSiHKGLubjUrZJp/view?usp=share_link"
+               )
+            }
          >
             Resume
          </Button>

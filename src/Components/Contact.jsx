@@ -83,7 +83,7 @@ const Contact = () => {
                         _hover={{ color: "red.500" }}
                      />
                   </Link>
-                     <h1>hariomsunilverma</h1>
+                     <h1>hariomsunilverma@gmail.com</h1>
                   </HStack>
                   <HStack>
                   <Text fontSize="lg">

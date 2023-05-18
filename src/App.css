@@ -57,7 +57,7 @@ height: 30%;
 
 #skills > div {
    display: flex;
-   flexwrap: wrap;
+   /* flexwrap: wrap; */
    justify-content: space-evenly;
    text-align: center;
    margin: 5% 0px;

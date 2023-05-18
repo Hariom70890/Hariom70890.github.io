@@ -7,7 +7,7 @@ import hand from "../images/waving-hand-joypixels.gif";
 const Home = () => {
    return (
       <Flex id="home" direction={["column", "row"]}>
-         <div>
+         <div id='home-container'>
             <h2 style={{ display: "inline" }}>Hi,</h2>
             <h3 style={{ display: "inline" }}>I'm a </h3>
             <h2 id="user-detail-name">Hariom Verma</h2>
@@ -15,7 +15,7 @@ const Home = () => {
             {/* <Cursor /> */}
             <br />
             <a id="resume-link-2"
-               href="https://drive.google.com/file/d/1bDky1HRtcOC-XFUlvjSiHKGLubjUrZJp/view?usp=share_link"
+               // href="https://drive.google.com/file/d/1bDky1HRtcOC-XFUlvjSiHKGLubjUrZJp/view?usp=share_link"
                target="_blank"
             >
                <Button
@@ -24,7 +24,7 @@ const Home = () => {
                   py={2}
                   cursor="pointer"
                   bg={"white"}
-                  color={"gray.800"}
+                  color={"gray.800"}  onClick={()=>window.open("https://drive.google.com/file/d/1bDky1HRtcOC-XFUlvjSiHKGLubjUrZJp/view?usp=share_link")}
                >
                   Resume
                </Button>
