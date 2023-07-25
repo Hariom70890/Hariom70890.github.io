@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.343410e0.css",
-    "main.js": "/static/js/main.cdfa3cf6.js",
+    "main.css": "/static/css/main.fcb81a28.css",
+    "main.js": "/static/js/main.fdf4633f.js",
     "static/js/787.1f11dfe9.chunk.js": "/static/js/787.1f11dfe9.chunk.js",
-    "static/media/working.gif": "/static/media/working.83dca235c19460b6ebab.gif",
-    "static/media/ContactGif.gif": "/static/media/ContactGif.65feb17b3b2dde135214.gif",
-    "static/media/waving-hand-joypixels.gif": "/static/media/waving-hand-joypixels.f2709cf81362b2b577e4.gif",
-    "static/media/react.jpg": "/static/media/react.0a2b9ad0023d46f7980c.jpg",
-    "static/media/JavaScript.jpg": "/static/media/JavaScript.66618eb6d34f1fcdfa32.jpg",
-    "static/media/html.jpg": "/static/media/html.14e12c2bc34709d4e254.jpg",
-    "static/media/css.jpg": "/static/media/css.82755d160f88ce28c921.jpg",
-    "static/media/github.jpg": "/static/media/github.f1df4fc0958b42709c6a.jpg",
+    "static/media/airbnb.png": "/static/media/airbnb.d861db86b411b1736c0a.png",
+    "static/media/dell.png": "/static/media/dell.4e09bd138c8b4a72c5e4.png",
+    "static/media/Airtable.png": "/static/media/Airtable.86f6c670267757720a5e.png",
+    "static/media/orbitz.png": "/static/media/orbitz.cd302695a575e05a22b7.png",
+    "static/media/paytm_Mall1.png": "/static/media/paytm_Mall1.bc44ef3954f5f79c7b99.png",
+    "static/media/Hariom_Verma_Resume.pdf": "/static/media/Hariom_Verma_Resume.15a305c444ce04530e64.pdf",
+    "static/media/geekbuying.png": "/static/media/geekbuying.edc1da94f872c074af3f.png",
+    "static/media/bg-image.jpg": "/static/media/bg-image.8820aa814c66777ad201.jpg",
+    "static/media/hari.png": "/static/media/hari.8a30fb42226e44fe8be0.png",
     "index.html": "/index.html",
-    "main.343410e0.css.map": "/static/css/main.343410e0.css.map",
-    "main.cdfa3cf6.js.map": "/static/js/main.cdfa3cf6.js.map",
+    "static/media/scroll.svg": "/static/media/scroll.303f33a50352aea260bc42ff6d287c1d.svg",
+    "main.fcb81a28.css.map": "/static/css/main.fcb81a28.css.map",
+    "main.fdf4633f.js.map": "/static/js/main.fdf4633f.js.map",
     "787.1f11dfe9.chunk.js.map": "/static/js/787.1f11dfe9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.343410e0.css",
-    "static/js/main.cdfa3cf6.js"
+    "static/css/main.fcb81a28.css",
+    "static/js/main.fdf4633f.js"
   ]
 }
