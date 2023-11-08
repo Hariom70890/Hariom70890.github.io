@@ -1,82 +1,96 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher&family=Radio+Canada:wght@300&display=swap");
 
-.App {
-   text-align: center;
-   /* background-color: #282c34; */
+
+*{
+  font-family: "Philosopher";
+  box-sizing: border-box;
 }
-h3 {
-   color: #ec407a;
-   text-align: center;
-   font-size: 40px;
-}
-
-#home {
-   display: flex;
-   gap: 10%;
-   padding: 100px 100px;
-   align-items: center;
-   font-size: 30px;
-   background: #5b5959;
-   color: white;
-   height: 100%;
-   width: 100%;
-   margin: auto;
-
-   justify-content: space-around;
-   padding-top: 150px;
+body{
+  overflow-x: hidden;
+  
 }
 
-#working img {
-   width: 100%;
-   height: 100%;
-   border-radius: 100px;
+.text {
+  /* position: absolute; */
+  /* top: 50%;  */
+  /* right: 50%; */
+  /* transform: translate(50%,-50%); */
+  text-transform: uppercase;
+  font-family: arial rounded MT;
+  /* font-size: 2em; */
+  /* font-weight: 700; */
+  color: #150327;
+  text-shadow: 1px 1px 1px #5ff6ff,
+      1px 2px 1px #95c1e8,
+      1px 3px 1px #66a8e2,
+     -1px  3px 2px #70b1eb,
+     -1px -1px 1px #60a0d3,
+      2px -1px 2px #65a4d8,
+  1px 7px 4px rgba(0,9,35,0.4),
+  1px 9px 10px rgba(0,64,255,0.2),
+  1px 9px 35px rgba(0,64,255,0.2),
+  1px 9px 60px rgba(0,64,255,0.4);
 }
 
-/* 
-#about{
-  width: 100%;
-  margin: auto;
-  padding: 20px 20%;
-background: #5b5959;
-color: #0c0c16;
+.text2 {
+  color: darkgrey;
+  white-space: nowrap;
+  /* position: absolute; */
+  /* top: 50%;
+  left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  font-size: 3em;
+  /* font-family: sans-serif; */
+  letter-spacing: 0.1em;
+  transition: 0.3s;
+  text-shadow: 1px 1px 0 grey, 1px 2px 0 grey, 1px 3px 0 grey, 1px 4px 0 grey,
+    1px 5px 0 grey, 1px 6px 0 grey, 1px 7px 0 grey, 1px 8px 0 grey,
+    5px 13px 15px black;
+}
 
+.text2:hover {
+  transition: 0.3s;
+  /* transform: scale(1.1)translate(-50%, -50%); */
+  text-shadow: 1px -1px 0 grey, 1px -2px 0 grey, 1px -3px 0 grey,
+    1px -4px 0 grey, 1px -5px 0 grey, 1px -6px 0 grey, 1px -7px 0 grey,
+    1px -8px 0 grey, 5px -13px 15px black, 5px -13px 25px #808080;
+}
+
+
+/* body{
+  overflow-x: hidden;
+  
 } */
-
-/* #about img{  
-height: 30%;
-  width: 38%;
-  border-radius: 100px;
-} */
-
-#skills {
-   color: rgb(242, 240, 240);
-   font-weight: 800;
-   margin: auto;
-   background: #5b5959;
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: #2F3847;
 }
 
-#skills > div {
-   display: flex;
-   /* flexwrap: wrap; */
-   justify-content: space-evenly;
-   text-align: center;
-   margin: 5% 0px;
+::-webkit-scrollbar-thumb {
+  width: 15px;
+  background:linear-gradient(cyan,blue,purple);
+  border-radius: 10px;
 }
 
-#skills img {
-   width: 100px;
-   height: 100px;
-   border-radius: 10px;
-   padding-bottom: 10px;
-   /* object-fit: cover; */
+
+.skill-box {
+  transition: all 0.2s ease-in-out;
 }
 
-#contact {
-   /* display: flex; */
-
-   padding: 50px 0px;
-
-   background: #5b5959;
-   color: azure;
+.skill-box:hover {
+  animation: pulse 0.5s;
 }
 
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

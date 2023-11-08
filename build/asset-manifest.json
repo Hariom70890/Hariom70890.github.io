@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fcb81a28.css",
+    "main.js": "/static/js/main.801341cf.js",
+    "static/js/787.1f11dfe9.chunk.js": "/static/js/787.1f11dfe9.chunk.js",
+    "static/media/PetsConnect.png": "/static/media/PetsConnect.4a21dcd4dcc08d0b6a8f.png",
+    "static/media/QuickBuy.png": "/static/media/QuickBuy.a1ab1057fd830a6cf0e1.png",
+    "static/media/BalanceBite.png": "/static/media/BalanceBite.d9715a6dc8296887a3f6.png",
+    "static/media/BigPocket.png": "/static/media/BigPocket.06da067bd1f61477bebe.png",
+    "static/media/ApnaTime.png": "/static/media/ApnaTime.c28afa57bae48bccdd31.png",
+    "static/media/Hariom_Verma_Resume.pdf": "/static/media/Hariom_Verma_Resume.15a305c444ce04530e64.pdf",
+    "static/media/bg-image.jpg": "/static/media/bg-image.8820aa814c66777ad201.jpg",
+    "static/media/hari.png": "/static/media/hari.8a30fb42226e44fe8be0.png",
+    "index.html": "/index.html",
+    "static/media/scroll.svg": "/static/media/scroll.303f33a50352aea260bc42ff6d287c1d.svg",
+    "main.fcb81a28.css.map": "/static/css/main.fcb81a28.css.map",
+    "main.801341cf.js.map": "/static/js/main.801341cf.js.map",
+    "787.1f11dfe9.chunk.js.map": "/static/js/787.1f11dfe9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fcb81a28.css",
+    "static/js/main.801341cf.js"
+  ]
+}
