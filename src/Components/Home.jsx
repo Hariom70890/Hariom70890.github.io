@@ -106,6 +106,7 @@ import {
                 >
                   <Link
                     target="_blank"
+                    id="resume-link-2"
                     className="nav-link resume"
                     href={Project}
                     download={"Hariom_Verma_Resume"}

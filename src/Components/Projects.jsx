@@ -678,7 +678,7 @@ with great taste and feel of heaven.
             </GridItem>
           }
 
-          {more && (
+          {(
             <GridItem
               display={"flex"}
               className="project-card"
