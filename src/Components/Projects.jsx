@@ -44,8 +44,16 @@ const Projects = () => {
     AOS.init({ delay: 50 });
   }, []);
   return (
-    <Box bgImage={bg} id="projects" py={"5%"} boxSizing="border-box">
-      <Box maxW={"6xl"} m="auto" boxSizing="border-box">
+    <Box  bgImage={bg}
+  id="projects"
+  py={{ base: "10%", md: "5%" }}
+  boxSizing="border-box">
+      <Box
+  maxW={{ base: "95vw", sm: "90vw", md: "85vw", lg: "80vw", xl: "7xl" }}
+    m="auto"
+    px={{ base: "4", md: "8" }}
+    boxSizing="border-box"
+>
         <Text
           lineHeight={1}
           fontWeight={600}
@@ -57,17 +65,20 @@ const Projects = () => {
           boxSizing="border-box"
           // color="white"
         >
-          My Projects
+           Projects
         </Text>
         <Grid
-          display={"flex"}
-          flexDir={"column"}
-          gap={6}
+          display={"grid"}
+          templateColumns={{
+      base: "1fr", // 1 column for mobile
+      md: "1fr 1fr" // 2 columns for tablet and up
+    }}
+          gap={"8%"}
           rowGap={9}
-          maxW={"5xl"}
+          // maxW={"5xl"}
           margin="auto"
           pt={12}
-          px="7"
+          // px="7"
           boxSizing="border-box"
         >
           {/* -------------------------------------START----------------------------------------------------- */}
@@ -76,36 +87,34 @@ const Projects = () => {
             <GridItem
               className="project-card"
               transition="all .2s ease-in-out"
-              display={"flex"}
+              // display={"flex"} 
               _hover={{ transform: "scale(0.95)" }}
-              flexDir={{
-                base: "column",
-                sm: "column",
-                md: "column",
-                lg: "row",
-              }}
+             flexDir={
+                 "column"
+              }
               boxShadow="0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35)"
               p={"1%"}
               rounded="10px"
               bgGradient="linear(to-r,cyan.400,blue.500)"
               data-aos="zoom-out-left"
             >
-              <Box w={{ lg: "50%", md: "100%" }}>
+              <Box w={{ lg: "100%" }}>
                 <Image
                   src={Chappan}
-                  alt="ApnaTime"
+                  alt="Chappan"
                   rounded={"md"}
-                  minH={"320px"}
+                  minH={"320px"} 
                 />
               </Box>
-              <Box pl="2%" w={{ lg: "50%", md: "100%" }}>
+              <Box pl="2%" w={{ lg:  "100%" }}>
                 <Heading
                   fontSize={{
                     base: "sm",
                     sm: "md",
                     md: "lg",
                     lg: "xl",
-                  }}
+                  } }
+                  p={"1%"}
                   color="white"
                   className="project-title"
                 >
@@ -232,9 +241,9 @@ with great taste and feel of heaven.
                   display={"flex"}
                   justifyContent="space-between"
                   fontWeight={"bolder"}
-                  p="1%"
+                  p="1% 10%"
                   color={"white"}
-                  width="40%"
+                  width="80%"
                 >
                   <Box cursor={"pointer"} rounded="90%">
                     <Link
@@ -277,27 +286,24 @@ with great taste and feel of heaven.
               transition="all .2s ease-in-out"
               display={"flex"}
               _hover={{ transform: "scale(0.95)" }}
-              flexDir={{
-                base: "column",
-                sm: "column",
-                md: "column",
-                lg: "row",
-              }}
+              flexDir={
+                 "column"
+              }
               boxShadow="0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35)"
               p={"1%"}
               rounded="10px"
               bgGradient="linear(to-r,cyan.400,blue.500)"
               data-aos="zoom-out-left"
             >
-              <Box w={{ lg: "50%", md: "100%" }}>
+              <Box w={{ lg:"100%" }}>
                 <Image
                   src={BalanceBite}
-                  alt="ApnaTime"
+                  alt="BalanceBite"
                   rounded={"md"}
                   minH={"320px"}
                 />
               </Box>
-              <Box pl="2%" w={{ lg: "50%", md: "100%" }}>
+              <Box pl="2%" w={{ lg:  "100%" }}>
                 <Heading
                   fontSize={{
                     base: "sm",
@@ -433,7 +439,7 @@ with great taste and feel of heaven.
                   fontWeight={"bolder"}
                   p="1%"
                   color={"white"}
-                  width="40%"
+                  width="80%"
                 >
                   <Box cursor={"pointer"} rounded="90%">
                     <Link
@@ -476,19 +482,16 @@ with great taste and feel of heaven.
               transition="all .2s ease-in-out"
               display={"flex"}
               _hover={{ transform: "scale(0.95)" }}
-              flexDir={{
-                base: "column",
-                sm: "column",
-                md: "column",
-                lg: "row",
-              }}
+              flexDir={
+                 "column"
+              }
               boxShadow="0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35)"
               p={"1%"}
               rounded="10px"
               bgGradient="linear(to-r,cyan.400,blue.500)"
               data-aos="zoom-out-left"
             >
-              <Box w={{ lg: "50%", md: "100%" }}>
+              <Box w={{ lg:  "100%" }}>
                 <Image
                   src={QuickBuy}
                   alt="QuickBuy"
@@ -496,7 +499,7 @@ with great taste and feel of heaven.
                   minH={"320px"}
                 />
               </Box>
-              <Box pl="2%" w={{ lg: "50%", md: "100%" }}>
+              <Box pl="2%" w={{ lg:  "100%" }}>
                 <Heading
                   fontSize={{
                     base: "sm",
@@ -641,7 +644,7 @@ with great taste and feel of heaven.
                   fontWeight={"bolder"}
                   p="1%"
                   color={"white"}
-                  width="40%"
+                  width="80%"
                 >
                   <Box cursor={"pointer"} rounded="90%">
                     <Link
@@ -684,19 +687,16 @@ with great taste and feel of heaven.
               className="project-card"
               transition="all .2s ease-in-out"
               _hover={{ transform: "scale(0.95)" }}
-              flexDir={{
-                base: "column",
-                sm: "column",
-                md: "column",
-                lg: "row",
-              }}
+            flexDir={
+                 "column"
+              }
               boxShadow="0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35)"
               p={"1%"}
               rounded="10px"
               bgGradient="linear(to-r,cyan.400,blue.500)"
               data-aos="zoom-out-left"
             >
-              <Box w={{ lg: "50%", md: "100%" }}>
+              <Box w={{ lg:  "100%" }}>
                 <Image
                   src={BigPocket}
                   alt="ApnaTime"
@@ -704,7 +704,7 @@ with great taste and feel of heaven.
                   minH={"320px"}
                 />
               </Box>
-              <Box pl="2%" w={{ lg: "50%", md: "100%" }}>
+              <Box pl="2%" w={{ lg:  "100%" }}>
                 <Heading
                   className="project-title"
                   fontSize={{
@@ -814,7 +814,7 @@ with great taste and feel of heaven.
                   fontWeight={"bolder"}
                   p="1%"
                   color={"white"}
-                  width="40%"
+                  width="80%"
                 >
                   <Box cursor={"pointer"} rounded="90%">
                     <Link
@@ -859,19 +859,16 @@ with great taste and feel of heaven.
               transition="all .2s ease-in-out"
               _hover={{ transform: "scale(0.95)" }}
               display={"flex"}
-              flexDir={{
-                base: "column",
-                sm: "column",
-                md: "column",
-                lg: "row",
-              }}
+             flexDir={
+                 "column"
+              }
               boxShadow="0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35)"
               p={"1%"}
               rounded="10px"
               bgGradient="linear(to-r,cyan.400,blue.500)"
               data-aos="zoom-out-left"
             >
-              <Box w={{ lg: "50%", md: "100%" }}>
+              <Box w={{ lg:  "100%" }}>
                 <Image
                   src={ApnaTime}
                   alt="ApnaTime"
@@ -879,7 +876,7 @@ with great taste and feel of heaven.
                   minH={"320px"}
                 />
               </Box>
-              <Box pl="2%" w={{ lg: "50%", md: "100%" }}>
+              <Box pl="2%" w={{ lg:  "100%" }}>
                 <Heading
                   className="project-title"
                   fontSize={{
@@ -961,7 +958,7 @@ with great taste and feel of heaven.
                   fontWeight={"bolder"}
                   p="1%"
                   color={"white"}
-                  width="40%"
+                  width="80%"
                 >
                   <Box cursor={"pointer"} rounded="90%">
                     <Link
@@ -1005,19 +1002,16 @@ with great taste and feel of heaven.
               className="project-card"
               display={"flex"}
               _hover={{ transform: "scale(0.95)" }}
-              flexDir={{
-                base: "column",
-                sm: "column",
-                md: "column",
-                lg: "row",
-              }}
+            flexDir={
+                 "column"
+              }
               boxShadow="0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35)"
               p={"1%"}
               rounded="10px"
               bgGradient="linear(to-r,cyan.400,blue.500)"
               data-aos="zoom-out-left"
             >
-              <Box w={{ lg: "50%", md: "100%" }}>
+              <Box w={{ lg:  "100%" }}>
                 <Image
                   src={PetsConnect}
                   alt="ApnaTime"
@@ -1025,7 +1019,7 @@ with great taste and feel of heaven.
                   minH={"320px"}
                 />
               </Box>
-              <Box pl="2%" w={{ lg: "50%", md: "100%" }}>
+              <Box pl="2%" w={{ lg:  "100%" }}>
                 <Heading
                   fontSize={{
                     base: "sm",
@@ -1167,7 +1161,7 @@ with great taste and feel of heaven.
                   fontWeight={"bolder"}
                   p="1%"
                   color={"white"}
-                  width="40%"
+                  width="80%"
                 >
                   <Box cursor={"pointer"} rounded="90%">
                     <Link

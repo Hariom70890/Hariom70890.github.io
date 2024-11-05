@@ -9,7 +9,8 @@ const About = () => {
     AOS.init({ delay: 50 });
   }, []);
   return (
-    <Box bgImage={bg} id="about" className="about section">
+    
+    <Box bgImage={bg} id="about" py={{ base: "10%", md: "5%" }} className="about section">
       <Text
         lineHeight={1}
         fontWeight={600}
@@ -32,7 +33,7 @@ const About = () => {
         flexDirection={["column", "column", "column", "row", "row", "row"]}
         colGap={14}
         justifyContent="center"
-        maxW={"6xl"}
+        maxW={"7xl"}
         m="auto"
       >
         <Box width={["full", "full", "full", "full", "30%", "30%"]}>
@@ -70,9 +71,20 @@ const About = () => {
                         out-of-the-box solution with complete ownership. I hope
                         to work in a challenging environment as a specialized
                         MERN stack developer. */}
-                A passionate Full Stack MERN Developer skilled in HTML, CSS,
+                {/* A passionate Full Stack MERN Developer skilled in HTML, CSS,
                 Javascript and React, with a focus on designing and building
-                high-performance and scalable enterprise applications
+                high-performance and scalable enterprise applications */}
+                Passionate Full Stack Web Developer with a strong focus on
+delivering scalable web applications using technologies like
+
+React, Node.js, and MongoDB. Proficient in developing front-
+end interfaces and back-end infrastructures with experience
+
+in Next.js, Express, and RESTful APIs. Adept at working in
+collaborative environments, meeting tight deadlines, and
+delivering high-quality results. Seeking to apply my
+technical expertise and creative problem-solving skills to
+impactful projects.
               </Text>
             </Box>
           </Box>

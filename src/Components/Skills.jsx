@@ -19,7 +19,7 @@ const Skills = () => {
             className="text"
             data-aos="fade-right"
          >
-            My Skills
+             Skills
          </Text>
          <Box
             display="grid"
@@ -155,6 +155,36 @@ const Skills = () => {
                className="skills-card-name"
                textAlign={"center"} fontWeight="bold">
                   React
+               </Text>
+            </Box>
+
+             <Box
+               boxShadow={
+                  " rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset"
+               }
+               className="skills-card"
+               p={2}
+               rounded="md"
+               clipPath="polygon(15% 0%, 85% 0%, 100% 15%, 100% 85%, 85% 100%, 15% 100%, 0% 85%, 0% 15%)"
+               data-aos="fade-up-right"
+               bgGradient="linear(to-r,cyan.400,blue.500)"
+            >
+               <Image
+               className="skills-card-img"
+                  src="https://img.icons8.com/color/512/nextjs.png"
+                  margin={"auto"}
+      
+                  transition="transform 1s ease-in-out"
+                  _hover={{ transform: "rotate(360deg)" }}
+                  bg="white"
+                  rounded={"50%"}
+                  p={2}
+                  w="80px"
+               />
+               <Text 
+               className="skills-card-name"
+               textAlign={"center"} fontWeight="bold">
+                  Next js
                </Text>
             </Box>
 
@@ -374,7 +404,34 @@ const Skills = () => {
                </Text>
             </Box>
 
-      
+       <Box
+               boxShadow={
+                  " rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset"
+               }
+               className="skills-card"
+               p={2}
+               rounded="md"
+               clipPath="polygon(15% 0%, 85% 0%, 100% 15%, 100% 85%, 85% 100%, 15% 100%, 0% 85%, 0% 15%)"
+               data-aos="fade-up-right"
+               bgGradient="linear(to-r,cyan.400,blue.500)"
+            >
+               <Image
+               className="skills-card-img"
+                  src="https://img.icons8.com/?size=100&id=33039&format=png&color=000000" 
+                  margin={"auto"}       
+                  transition="transform 1s ease-in-out"
+                  _hover={{ transform: "rotate(360deg)" }}
+                  bg="white"
+                  rounded={"50%"}
+                  p={2}
+                  w="80px"
+               />
+               <Text 
+               className="skills-card-name"
+               textAlign={"center"} fontWeight="bold">
+                  AWS
+               </Text>
+            </Box>
 
             <Box
                boxShadow={
@@ -492,7 +549,7 @@ const Skills = () => {
                   Prisma
                </Text>
             </Box> */}
-            {/*  <Box
+             <Box
           boxShadow={
             " rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset"
           }
@@ -503,9 +560,9 @@ const Skills = () => {
           data-aos="fade-up-right"
           bgGradient="linear(to-r,cyan.400,blue.500)"
         >
-          <Image
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1200px-Tailwind_CSS_Logo.svg.png"
-            margin={"auto"}
+               <Image
+                  src="https://img.icons8.com/?size=100&id=KIcFwp9MNQL5&format=png&color=FA5E05"
+             margin={"auto"}
             className="logo"
             transition="transform 1s ease-in-out"
             _hover={{ transform: "rotate(360deg)" }}
@@ -515,11 +572,11 @@ const Skills = () => {
             w="80px"
           />
           <Text textAlign={"center"} fontWeight="bold">
-            Tailwind CSS
+            Postman
           </Text>
-        </Box> */}
+        </Box>
 
-            {/* <Box
+            <Box
           boxShadow={
             " rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset"
           }
@@ -531,7 +588,7 @@ const Skills = () => {
           bgGradient="linear(to-r,cyan.400,blue.500)"
         >
           <Image
-            src="https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/events/nextjs-boilerplate-logo.png"
+            src="https://www.mailerlite.com/assets/integration/n8n-icon.png"
             margin={"auto"}
             className="logo"
             transition="transform 1s ease-in-out"
@@ -542,9 +599,9 @@ const Skills = () => {
             w="80px"
           />
           <Text textAlign={"center"} fontWeight="bold">
-            Nextjs
+            N8N
           </Text>
-        </Box> */}
+        </Box>
          </Box>
       </Box>
    );

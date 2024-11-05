@@ -10,7 +10,7 @@ const Calender = () => {
       AOS.init({ delay: 300 });
    }, []);
    return (
-      <Box bgImage={bg} py={"5%"} className="react-activity-calendar"   boxSizing="border-box">
+      <Box bgImage={bg} py={{ base: "10%", md: "5%" }}  className="react-activity-calendar"   boxSizing="border-box">
          <Text
             lineHeight={1}
             fontWeight={600}
@@ -77,14 +77,13 @@ const Calender = () => {
                pt="40px"
                w="max-content"
                data-aos="zoom-out-left"
-               // width={"80%"}
+               width={"80%"}
             >
                <Image
                   m="auto" 
                   id="github-top-langs"
             //  w={"1200%"}
          src = 'https://github-readme-stats.vercel.app/api/top-langs/?username=hariom70890&hide_border=true&include_all_commits=true&layout=compact&theme=algolia'
-
                   alt=""
                />
      

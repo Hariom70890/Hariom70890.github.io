@@ -22,7 +22,7 @@ import {
      AOS.init({ delay: 200 });
    }, []);
    return (
-     <Box m="auto" bgImage={bg}  id = 'contact' py={"5%"} boxSizing="border-box">
+     <Box m="auto" bgImage={bg}  id = 'contact' py={{ base: "10%", md: "5%" }} boxSizing="border-box">
        <Box
          // pb={10}
          display="flex"

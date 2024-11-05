@@ -40,7 +40,7 @@ export default function Navbar() {
     >
       <Box
         // bg="#347FCD"
-        maxW={"6xl"}
+        // maxW={"7xl"}
         m="auto"
         px={5}
         py={1}
@@ -49,10 +49,12 @@ export default function Navbar() {
       >
         <Flex
           h={16}
+          w={"full"}
           alignItems={"center"}
           justifyContent={"center"}
-          //   border={"1px solid red"}
-        >
+          gap={5}
+            // border={"1px solid red"}
+          >
           <IconButton
             size={"md"}
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
@@ -81,7 +83,7 @@ export default function Navbar() {
             </Box>
             <HStack
               as={"nav"}
-              spacing={6}
+              spacing={10}
               display={{ base: "none", md: "flex" }}
               cursor="pointer"
             >
@@ -96,7 +98,7 @@ export default function Navbar() {
                   offset={-77}
                   duration={500}
                   transition="all .2s ease-in-out"
-                  _hover={{ transform: "scale(0.9)" }}
+                  _hover={{transform: "scale(0.9)"}} 
                 >
                   {link.title}
                 </Link>
@@ -112,10 +114,7 @@ export default function Navbar() {
                     <Button
                       download={Project}
                       onClick={() => {
-      window.open(
-        "https://drive.google.com/file/d/1bDky1HRtcOC-XFUlvjSiHKGLubjUrZJp/view",
-        "_blank"
-      );
+      window.open( "https://drive.google.com/file/d/1bDky1HRtcOC-XFUlvjSiHKGLubjUrZJp/view", "_blank" );
     }}
                       cursor={"pointer"}
                       color={"white"}

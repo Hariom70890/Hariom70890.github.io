@@ -10,13 +10,14 @@ import Skills from "./Components/Skills";
 import AnimatedCursor from "react-animated-cursor";
 import { ReactComponent as MySVG } from "./scroll.svg";
 import ScrollToTop from "react-scroll-to-top";
+import Experience from "./Components/Experience";
 
 function App() {
   return (
-    <Box className="App" >
+    <Box  >
             <AnimatedCursor
-        innerSize={15}
-        outerSize={15}
+          innerSize={15}
+          outerSize={15}
         color="1,183,214"
         outerAlpha={0.1}
         innerScale={0.7}
@@ -28,7 +29,7 @@ function App() {
       <Home />
       <About />
       <Skills />
-
+<Experience/>
       <Projects />
 
       <Calender />

@@ -30,7 +30,9 @@ import {
         id="home"
         class="nav-link home"
         boxShadow={"0px 15px 10px -15px #111"}
-        pb={-1}
+        // pb={ -1 }
+        height={ "100vh" }
+        justifyContent={"center"}
         boxSizing="border-box"
       >
         <Box
@@ -133,10 +135,10 @@ import {
               </motion.div>
             </Box>
           </Box>
-          <Box m="auto" width={["full", "full", "full", "full", "50%", "50%"]}>
+          <Box m="auto"  width={["full", "full", "full", "full", "50%", "50%"]}>
             <Lottie
               animationData={animation}
-              style={{ width: "70%", margin: "auto" }}
+              style={{ width: "90%", margin: "auto" }}
             />
           </Box>
         </Box>
