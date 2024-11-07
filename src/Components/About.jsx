@@ -35,7 +35,7 @@ const About = () => {
         justifyContent="center"
         maxW={"7xl"}
         m="auto"
-      >
+      > 
         <Box width={["full", "full", "full", "full", "30%", "30%"]}>
           <Image
             w={{ base: "50%", md: "50%", lg: "50%" }}

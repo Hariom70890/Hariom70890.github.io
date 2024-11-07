@@ -50,7 +50,7 @@ const Experience = () => {
     {
       role: "Full Stack Developer",
       company: "MetaGeeks Technology",
-      duration: "June 2024 - Present",
+      duration: "June 2024 - October 2024",
       location: "Noida, India",
       achievements: [
         "Developed web applications using Next.js and TypeScript for enhanced scalability",
